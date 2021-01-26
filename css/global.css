@@ -1,0 +1,113 @@
+/*Reset CSS*/
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color:black;
+  font-family: 'Oswald', sans-serif;
+}
+a,a:hover, a:active,a:visited{
+  display: block;
+  text-decoration: none;
+  color:black;
+}
+/* Horizontal Navigation styles*/
+.container{
+  flex-direction: column;
+  display: flex;
+  flex: auto;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+nav ul{
+  list-style: none;
+  padding:0;
+    margin-top:40px;
+}
+nav ul li  a{
+  padding:20px;
+ 
+  font-size: 24px;
+ 
+  
+}
+nav ul li{
+  border:1px solid black;
+   border-left:0;
+   border-right:0;
+   border-top:0;
+   
+ }
+nav ul li a:hover{
+  background-color: red;
+  color:white;
+}
+.mobile-nav{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+/*mobile navigation*/
+.wrapper {
+  /* Default state */
+  display: none;
+  padding: 20px 0 0;
+}
+#toggle:checked ~ .wrapper {
+  /* A toggled state! No JavaScript! */
+  display: block;
+}
+
+label {
+  display: block;
+  background-image: url("../images/mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  height:72px;
+ width: 72px;
+ position: absolute;
+ top:0;
+ left:0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
+  
+  /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+.wrapper{
+  background: lightblue;
+  padding:20px 0 0;
+  box-shadow: 5px cadetblue;
+  box-shadow: 0 0px 5px 0;
+}
+/*Main section styles*/
+main{
+  width:80vw;
+  max-width: 95ch;
+  margin: 0 auto;
+}
+/*Banner styles*/
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner div{
+  margin: 20px;
+}
+.picture{
+  width:300px;
+  
+}
+.picture img{
+  border-radius: 50%;
+  width:100%;
+  
+}
+.content{
+  flex:auto;
+}

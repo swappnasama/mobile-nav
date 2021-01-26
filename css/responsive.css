@@ -1,0 +1,28 @@
+@media screen and (min-width: 50rem) {
+  /* Mobile navigation styles*/
+  
+  
+  .container {
+    flex-direction: row;
+  
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+  }
+ 
+  nav ul li{
+    border:0;
+  }
+  .visually-hidden {display:none;}
+  .wrapper {
+    /* Default state */
+    display: block;
+    padding: 20px;
+  }
+label {
+  display: none;
+}
+
+}
+
